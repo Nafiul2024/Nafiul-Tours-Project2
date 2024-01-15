@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Mulish", sans-serif;
+  max-width: 1440px;
 }
 /* navbar starts */
 .nav-container {
@@ -92,6 +93,7 @@ button {
 .description-part ul li {
   margin-top: 24px;
   margin-bottom: 24px;
+  color: rgba(19, 19, 24, 0.70);
 }
 .description-part .list-item {
   padding-left: 30px;
@@ -102,3 +104,19 @@ button {
   background-color: #ff5400;
 }
 /* main part ends */
+
+/* responsive part */
+
+@media only screen and (max-width: 600px) {
+  .tour-description-container{
+    flex-direction: column;
+  }
+  .tour-description-container img{
+    width: 100%;
+    padding-left: 40px;
+  }
+  .tour-description-container .description-part{
+    padding-right: 25px;
+  }
+  
+}
