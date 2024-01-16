@@ -1,122 +1,157 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Mulish", sans-serif;
-  max-width: 1440px;
-}
-/* navbar starts */
-.nav-container {
-  width: 80%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 52px;
-  margin-bottom: 49px;
-}
-.nav-title {
-  display: flex;
-}
-.nav-title h1 {
-  font-weight: 800;
-  font-size: 36px;
-}
-.nav-menu a {
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 400px;
-  margin-right: 44px;
-  color: #424247;
-}
-/* navbar ends */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mulish", sans-serif;
+    max-width: 1440px;
+  }
+  /* navbar starts */
+  .nav-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 52px;
+    margin-bottom: 49px;
+    min-width: 992px;
+    max-width: 1170px;
+  }
+  .nav-title {;
+    display: flex;
+  }
+  .nav-menu{
+    
+  }
+  .nav-container h1 {
+    font-weight: 800;
+    font-size: 36px;
+  }
+  .nav-container img{
+  }
+  .nav-container a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400px;
+    margin-right: 44px;
+    color: #424247;
+  }
+  /* navbar ends */
 
-/* banner part starts */
+  /* banner part starts */
 .banner-container {
-  background-image: url("../Images/Group\ 13\ \(1\)\ \(1\).png");
-  width: 1170px;
-  height: 500px;
-  width: 80%;
-  margin: 0 auto;
-  border-radius: 10px;
-}
-.banner-container h1 {
-  font-size: 64px;
-  font-weight: 800;
-  color: #fff;
-  text-align: center;
-  padding-top: 106px;
-}
-
-.banner-container p {
-  font-size: 16px;
-  font-weight: 400;
-  text-align: center;
-  color: #fff;
-  margin-top: 24px;
-  margin-bottom: 48px;
-}
-.banner-input {
-  font-size: 16px;
-  font-weight: 400;
-  text-align: center;
-  padding: 10px;
-}
-.banner-input input,
-button {
-  border-radius: 8px;
-  border: none;
-  padding: 16px;
-  margin-right: 48px;
-}
-/* banner part ends */
-
-/* main part starts */
-.tour-description-container {
-  width: 80%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
-  margin-top: 100px;
-}
-.description-part h1 {
-  color: #131318;
-  margin-bottom: 24px;
-}
-.description-part p {
-  color: rgba(19, 19, 24, 0.7);
-  font-size: 16px;
-  font-weight: 400;
-  margin-bottom: 24px;
-}
-.description-part ul li {
-  margin-top: 24px;
-  margin-bottom: 24px;
-  color: rgba(19, 19, 24, 0.70);
-}
-.description-part .list-item {
-  padding-left: 30px;
-}
-.description-part button {
-  padding: 14px;
-  color: white;
-  background-color: #ff5400;
-}
-/* main part ends */
-
-/* responsive part */
-
-@media only screen and (max-width: 600px) {
-  .tour-description-container{
-    flex-direction: column;
+    background-image: url("../Images/Group\ 13\ \(1\)\ \(1\).png");
+    width: 1170px;
+    height: 500px;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
   }
-  .tour-description-container img{
-    width: 100%;
-    padding-left: 40px;
-  }
-  .tour-description-container .description-part{
-    padding-right: 25px;
+  .banner-container h1{
+    font-size: 64px;
+    font-weight: 800;
+    color: #fff;
+    text-align: center;
+    padding-top: 106px;
   }
   
-}
+  .banner-container p {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: #fff;
+    margin-top: 24px;
+    margin-bottom: 48px;
+  }
+  .banner-input {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    padding: 10px;
+  }
+  .banner-input input,
+  button {
+    border-radius: 8px;
+    border: none;
+    padding: 16px;
+    margin-right: 48px;
+  }
+  /* banner part ends */
+
+  /* main part starts */
+.tour-description-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 100px;
+  }
+  .description-part h1 {
+    color: #131318;
+    margin-bottom: 24px;
+  }
+  .description-part p {
+    color: rgba(19, 19, 24, 0.7);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 24px;
+  }
+  .description-part ul li {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    color: rgba(19, 19, 24, 0.70);
+  }
+  .description-part .list-item {
+    padding-left: 30px;
+  }
+  .description-part button {
+    padding: 14px;
+    color: white;
+    background-color: #ff5400;
+  }
+  /* main part ends */
+
+  /* responsive part */
+
+  @media only screen and (max-width: 600px) {
+    .nav-container{
+        width: 375px;
+        height: 64px;
+    }
+    .nav-menu{
+        display: none;
+    }
+    .nav-container h1 {
+        font-size: 80px;
+    }
+    header{
+        width: 100%;
+    }
+    .banner-container{
+        position: relative;
+    }
+    .banner-container .banner-input{
+        margin-top: 5px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: 0%;
+        left: 27%;
+        gap: 10px;
+
+    }
+    .banner-container h1{
+        position: absolute;
+        bottom: 60%;
+    }
+    .banner-container p{
+        position: absolute;
+        bottom: 40%;
+        
+    }
+    .tour-description-container{
+        display: flex;
+        flex-direction: column;
+    }
+  }
